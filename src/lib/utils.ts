@@ -6,11 +6,16 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const getExperienceInYears = () => {
-  const start: Date = new Date("2021-06-28");
-  const today: Date = new Date();
+  const startYear = 2021;
+  const startMonth = 6;
 
-  const diffInMs = today.getTime() - start.getTime();
-  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1;
 
-  return Number(diffInYears.toFixed(1));
+  const diffInMonths =
+    (currentYear - startYear) * 12 + (currentMonth - startMonth) + 2;
+  const diffInYears = diffInMonths / 12;
+
+  return Math.ceil(diffInYears * 10) / 10;
 };
