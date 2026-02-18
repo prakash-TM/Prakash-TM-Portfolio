@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy:live": "npm run build && npm run deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

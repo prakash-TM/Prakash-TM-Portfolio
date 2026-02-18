@@ -43,3 +43,8 @@ This project is built with:
 - commit and push the changes
 - npm run build
 - npm run deploy
+
+**OR**
+
+- commit and push the changes
+- npm run deploy:live
