@@ -37,3 +37,9 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+## How to deploy the new changes?
+
+- commit and push the changes
+- npm run build
+- npm run deploy
