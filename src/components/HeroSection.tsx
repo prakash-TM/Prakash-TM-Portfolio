@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4 font-mono"
           >
-            Software Engineer · MERN Stack · AI Engineer
+            Senior Software Engineer · MERN Stack · AI Engineer
           </motion.p>
 
           <motion.p
@@ -122,7 +122,10 @@ const HeroSection = () => {
           transition={{ delay: 1, duration: 0.5 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors animate-float">
+          <a
+            href="#about"
+            className="text-muted-foreground hover:text-foreground transition-colors animate-float"
+          >
             <ArrowDown size={20} />
           </a>
         </motion.div>

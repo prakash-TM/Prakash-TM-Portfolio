@@ -43,7 +43,7 @@ const AboutSection = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
               B.E. in Electronics and Communication Engineering (2017–2021). Currently working as a
-              Software Engineer at CESIT Pvt Ltd, Chennai.
+              Senior Software Engineer at CESIT Pvt Ltd, Chennai.
             </p>
           </motion.div>
 
