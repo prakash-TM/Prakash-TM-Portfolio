@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { House, Menu, X } from "lucide-react";
+import { House, Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import resumePdf from "@/assets/resume/Prakash-TM-MERN-AI.pdf";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -9,6 +10,8 @@ const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
+
+const resumeUrl = resumePdf;
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,6 +78,18 @@ const Navbar = () => {
           ))}
           <li>
             <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Prakash-TM-MERN-AI.pdf"
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2 rounded-lg text-foreground transition-all duration-200 hover:bg-primary/10 hover:text-primary"
+            >
+              <Download size={16} />
+              Resume
+            </a>
+          </li>
+          <li>
+            <a
               href="#contact"
               onClick={(e) => handleNavClick(e, "#contact")}
               className="text-sm font-medium px-5 py-2 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
@@ -115,6 +130,18 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Prakash-TM-MERN-AI.pdf"
+                  className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2 rounded-lg text-foreground transition-all duration-200 hover:bg-primary/10 hover:text-primary"
+                >
+                  <Download size={16} />
+                  Resume
+                </a>
+              </li>
               <li>
                 <a
                   href="#contact"

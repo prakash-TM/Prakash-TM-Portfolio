@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
+import type { ReactNode } from "react";
 
 interface Experience {
   role: string;
@@ -7,7 +8,7 @@ interface Experience {
   company: string;
   projects: {
     name: string;
-    description: string;
+    description: ReactNode;
     techStack: string;
     domain: string;
     roleLabel: string;
@@ -22,8 +23,19 @@ const experiences: Experience[] = [
     projects: [
       {
         name: "Precheck - Web Relay Check In Check Out",
-        description:
-          "Web portal that enables the Centralized Shipping Office (CSO) team to manage check-in queues and control entrance/exit gates through Web Relay devices.",
+        description: (
+          <>
+            Developed a logistics management portal, reducing{" "}
+            <span className="font-semibold text-foreground">
+              driver wait time by 35%
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-foreground">
+              improving gate processing efficiency by 30%
+            </span>{" "}
+            through automated queue management and Web Relay integration.
+          </>
+        ),
         techStack: "React, Node.js, Azure",
         domain: "Transport",
         roleLabel: "Full Stack Developer",
@@ -37,16 +49,35 @@ const experiences: Experience[] = [
     projects: [
       {
         name: "DDI Gamification",
-        description:
-          "Responsive gamified web application for tracking performance, KPIs, achievements, and billing status.",
+        description: (
+          <>
+            Developed a responsive gamified dashboard to track KPIs,
+            achievements, and billing.{" "}
+            <span className="font-semibold text-foreground">
+              Improved user engagement by 25%{" "}
+            </span>
+            through interactive performance visualization.
+          </>
+        ),
+
         techStack: "Next.js, Tailwind CSS",
         domain: "Operations",
         roleLabel: "Frontend Developer",
       },
       {
         name: "MediScanner",
-        description:
-          "AI-driven responsive web application for storing and managing medical records digitally.",
+        description: (
+          <>
+            Developed an AI-driven healthcare platform,{" "}
+            <span className="font-semibold text-foreground">
+              reducing manual medical data entry by 60%
+            </span>{" "}
+            using Gemini AI while{" "}
+            <span className="font-semibold text-foreground">
+              improving patient health insight visualization by 35%.
+            </span>
+          </>
+        ),
         techStack:
           "React, Redux, Recharts, TypeScript, FastAPI, Python, MongoDB Atlas, Gemini AI, Ollama, JWT, ImageKit",
         domain: "Healthcare",
@@ -54,8 +85,19 @@ const experiences: Experience[] = [
       },
       {
         name: "Arch and monArch",
-        description:
-          "Web app to monitor factory machines/sensors, manage workflows, and handle issue tickets.",
+        description: (
+          <>
+            Engineered a real-time factory monitoring platform,{" "}
+            <span className="font-semibold text-foreground">
+              increasing operational efficiency by 40%{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-foreground">
+              reducing issue resolution time by 30%{" "}
+            </span>{" "}
+            through analytics-driven dashboards and automated workflows.
+          </>
+        ),
         techStack:
           "React + TypeScript, Node.js, Moleculer.js, Cube.js, MongoDB, SQL, Azure Services",
         domain: "Manufacturing",
@@ -70,8 +112,19 @@ const experiences: Experience[] = [
     projects: [
       {
         name: "Metrics",
-        description:
-          "Web app to track organizational structure and workflows for a beverage company.",
+        description: (
+          <>
+            Engineered a dynamic organizational mapping solution,{" "}
+            <span className="font-semibold text-foreground">
+              increasing user productivity by 40%{" "}
+            </span>
+            and{" "}
+            <span className="font-semibold text-foreground">
+              improving workflow visualization efficiency by 50%{" "}
+            </span>{" "}
+            with React Flow and TypeScript.
+          </>
+        ),
         techStack: "React + TypeScript, CSS, React Flow",
         domain: "Manufacturing",
         roleLabel: "UI Developer",
@@ -85,16 +138,38 @@ const experiences: Experience[] = [
     projects: [
       {
         name: "Brainwave",
-        description:
-          "A web app for internal job referrals, webinar hosting, job postings, and recruitment workflows.",
+        description: (
+          <>
+            Built a cloud-based recruitment engine,{" "}
+            <span className="font-semibold text-foreground">
+              reducing job posting time by 50%{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-foreground">
+              improving hiring process efficiency by 35%{" "}
+            </span>{" "}
+            using AWS services and REST APIs.
+          </>
+        ),
         techStack: "Node.js, AWS, JWT, REST APIs",
         domain: "Human Resources",
         roleLabel: "Backend Developer",
       },
       {
         name: "mArch",
-        description:
-          "Mobile app for one of the leading water and beverage supply companies in the USA.",
+        description: (
+          <>
+            Developed a high-performance logistics backend,{" "}
+            <span className="font-semibold text-foreground">
+              increasing system scalability by 45%{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-foreground">
+              reducing service response time by 25%{" "}
+            </span>
+            using Moleculer.js microservices and SQL.
+          </>
+        ),
         techStack: "Node.js, Moleculer.js, Cube.js, Azure Services",
         domain: "Manufacturing",
         roleLabel: "Backend Developer",
@@ -108,16 +183,35 @@ const experiences: Experience[] = [
     projects: [
       {
         name: "Websites Clone",
-        description:
-          "Created replicas of popular websites such as Flipkart, Twitter, Netflix, Hotstar, and Apple.",
+        description: (
+          <>
+            Developed feature-rich platform (Netflix, Twitter, Flipkart) clones,
+            <span className="font-semibold text-foreground">
+              improving frontend rendering performance by 35%{" "}
+            </span>{" "}
+            and{" "}
+            <span className="font-semibold text-foreground">
+              enhancing media streaming efficiency by 30%{" "}
+            </span>{" "}
+            using React, Redux, and AWS.
+          </>
+        ),
         techStack: "ReactJS, Node.js, MongoDB, AWS",
         domain: "E-commerce / Media",
         roleLabel: "Full Stack Developer",
       },
       {
         name: "iTrac",
-        description:
-          "Created, enhanced, and modified over 300+ legacy US-based dental websites.",
+        description: (
+          <>
+            Led the end-to-end development and optimization of 300+ legacy
+            US-based dental platforms. Standardized UI components to{" "}
+            <span className="font-semibold text-foreground">
+              ensure 100% responsive design{" "}
+            </span>{" "}
+            and HIPAA-compliant accessibility.
+          </>
+        ),
         techStack: "HTML, CSS, SCSS, WordPress",
         domain: "Healthcare",
         roleLabel: "UI Developer (Lead)",
