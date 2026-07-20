@@ -16,8 +16,23 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    role: "Senior Software Engineer",
+    period: "May 2026 – Present",
+    company: "CESIT Pvt Ltd, Chennai",
+    projects: [
+      {
+        name: "Precheck - Web Relay Check In Check Out",
+        description:
+          "Web portal that enables the Centralized Shipping Office (CSO) team to manage check-in queues and control entrance/exit gates through Web Relay devices.",
+        techStack: "React, Node.js, Azure",
+        domain: "Transport",
+        roleLabel: "Full Stack Developer",
+      },
+    ],
+  },
+  {
     role: "Software Engineer",
-    period: "May 2025 – Present",
+    period: "May 2025 – May  2026",
     company: "CESIT Pvt Ltd, Chennai",
     projects: [
       {
@@ -32,7 +47,8 @@ const experiences: Experience[] = [
         name: "MediScanner",
         description:
           "AI-driven responsive web application for storing and managing medical records digitally.",
-        techStack: "React, Redux, Recharts, TypeScript, FastAPI, Python, MongoDB Atlas, Gemini AI, JWT, ImageKit",
+        techStack:
+          "React, Redux, Recharts, TypeScript, FastAPI, Python, MongoDB Atlas, Gemini AI, Ollama, JWT, ImageKit",
         domain: "Healthcare",
         roleLabel: "Full Stack Developer",
       },
@@ -40,7 +56,8 @@ const experiences: Experience[] = [
         name: "Arch and monArch",
         description:
           "Web app to monitor factory machines/sensors, manage workflows, and handle issue tickets.",
-        techStack: "React + TypeScript, Node.js, Moleculer.js, Cube.js, MongoDB, SQL, Azure Services",
+        techStack:
+          "React + TypeScript, Node.js, Moleculer.js, Cube.js, MongoDB, SQL, Azure Services",
         domain: "Manufacturing",
         roleLabel: "Full Stack Developer",
       },
@@ -119,7 +136,9 @@ const ExperienceSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-sm font-mono text-primary mb-3 tracking-wider uppercase">Experience</p>
+          <p className="text-sm font-mono text-primary mb-3 tracking-wider uppercase">
+            Experience
+          </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">
             Where I've Worked
           </h2>
@@ -143,8 +162,12 @@ const ExperienceSection = () => {
                 <div className="absolute left-[11px] top-1.5 w-[18px] h-[18px] rounded-full border-[3px] border-primary bg-background hidden md:block" />
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
-                  <h3 className="text-xl font-bold text-foreground">{exp.role}</h3>
-                  <span className="text-sm font-mono text-muted-foreground">{exp.period}</span>
+                  <h3 className="text-xl font-bold text-foreground">
+                    {exp.role}
+                  </h3>
+                  <span className="text-sm font-mono text-muted-foreground">
+                    {exp.period}
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-2 text-muted-foreground mb-5">
@@ -159,7 +182,9 @@ const ExperienceSection = () => {
                       className="glass-card p-5 hover:border-primary/20 transition-colors"
                     >
                       <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
-                        <h4 className="font-semibold text-foreground">{project.name}</h4>
+                        <h4 className="font-semibold text-foreground">
+                          {project.name}
+                        </h4>
                         <span className="text-xs px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium w-fit">
                           {project.domain}
                         </span>

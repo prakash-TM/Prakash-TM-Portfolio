@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4 font-mono"
           >
-            Senior Software Engineer · MERN Stack · AI Engineer
+            Senior Software Engineer · MERN Stack · Gen AI
           </motion.p>
 
           <motion.p
@@ -56,9 +56,9 @@ const HeroSection = () => {
             className="text-base sm:text-lg text-muted-foreground/80 leading-relaxed mb-10 max-w-2xl mx-auto"
           >
             Full Stack Developer with {getExperienceInYears()} years of
-            experience building scalable web applications using the MERN stack,
-            AWS, and Azure. Experienced in end-to-end product development and
-            AI-driven solutions including prompt engineering, AI agents, MCP,
+            experience building scalable web applications using the MERN stack, Docker, 
+            AWS and Azure. Experienced in end-to-end product development and
+            AI-driven solutions including prompt engineering, AI agents, Agentic AI, MCP
             and RAG.
           </motion.p>
 

@@ -39,7 +39,7 @@ const AboutSection = () => {
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
               Proven experience in building AI-driven applications using AI agents, RAG, MCP, and
               ChromaDB, with strong expertise in end-to-end product development, performance
-              optimization, and deploying production-ready systems in Agile environments.
+              optimization and deploying production-ready systems in Agile environments.
             </p>
             <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
               B.E. in Electronics and Communication Engineering (2017–2021). Currently working as a
